@@ -29,7 +29,7 @@ export default class Sidebar extends Component {
             <SiYoutubeshorts className="w-6 h-6" />
              Shorts
             </li>
-            <li className='flex justify-start h-[40px] px-3  items-center gap-5 font-normal'>
+            <li className='flex justify-start h-[40px] px-3  items-center gap-5'>
         <MdSubscriptions className="w-6 h-6" />
              Subscription
             </li>
