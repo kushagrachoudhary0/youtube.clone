@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function Head() {
-  return (
-    <div className='w-100% h-56 bg-white '>Head</div>
-  )
+export default function Head(){
+    return (
+      <div className="w-[50vw] bg-blue-950 ">
+        hemraj
+      </div>
+    );
+
 }
