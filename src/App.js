@@ -3,8 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="bg-black">
-      <header className='text-white '>hellow</header>
+    <div>
+      
     </div>
   );
 }
