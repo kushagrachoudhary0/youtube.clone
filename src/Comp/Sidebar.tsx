@@ -5,6 +5,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { GoHistory } from "react-icons/go";
 import { AiTwotonePlaySquare } from "react-icons/ai";
 import Chip from './Chip.tsx';
+import { Link } from 'react-router-dom';
 
 export default class Sidebar extends Component {
     render() {
@@ -22,15 +23,15 @@ export default class Sidebar extends Component {
                     <ul className='p-3'>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
                             <IoHome className="w-6 h-6" />
-                            Home
+                            <Link  to="/Home">Home</Link> 
                         </li>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
                             <MdOutlineExplore className="w-6 h-6" />
-                            Explore
+                            <Link  to="/Explore">Explore</Link>
                         </li>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
                             <SiYoutubeshorts className="w-6 h-6" />
-                            Shorts
+                            <Link  to="/Shorts">Shorts</Link>
                         </li>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5'>
                             <MdSubscriptions className="w-6 h-6" />

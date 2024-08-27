@@ -1,15 +1,23 @@
 import React from 'react';
-import './App.css';
+import "./App.css"
 import Head from './Header/Head.tsx';
-import Sidebar from './Comp/Sidebar.tsx';
 import '../src/Comp/Api.js'
+import { BrowserRouter} from 'react-router-dom'
+import { Routes,Route} from 'react-router-dom'
+import Explore from './Pages/Explore.jsx';
+import Shorts from './Pages/Shorts.tsx';
 
 function App() {
   return (
     <div>
-     <Head/>
-     <Sidebar/>
-    </div>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/Home' element={  <Head/> }/>
+      <Route path='/Explore' element={  <Explore/> }/>
+      <Route path='/Shorts' element={  <Shorts/> }/>
+     </Routes>
+     </BrowserRouter>
+    </div> 
   );
 }
 

@@ -3,10 +3,12 @@ import { IoIosMenu } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { CiBellOn } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
+import Sidebar from "../Comp/Sidebar.tsx";
 
 
 export default function Head() {
   return (
+    <>
     <div className="w-[100%] h-[56px] bg-white  flex justify-between  items-center">
       <div className=" flex justify-between items-center mx-3  w-[138px]">
         <IoIosMenu className=" w-[30px] h-[30px]"/>
@@ -74,6 +76,9 @@ export default function Head() {
 <CiBellOn  className=" w-[30px] h-[30px]" />
 <CgProfile  className=" w-[30px] h-[30px]" />
       </div>
+     
     </div>
+     <Sidebar/> 
+     </>
   );
 }
