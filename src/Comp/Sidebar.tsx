@@ -13,7 +13,7 @@ export default class Sidebar extends Component {
 
 
         return (
-            <div className=' flex  border-t-[1px] '>
+            <div className=' flex '>
                 <div className='w-[240px] border-r-[1px]'>
                     <ul className='p-3'>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
