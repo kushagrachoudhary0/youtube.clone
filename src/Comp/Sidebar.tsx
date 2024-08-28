@@ -5,6 +5,8 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { GoHistory } from "react-icons/go";
 import { AiTwotonePlaySquare } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import Explore from '../Assets/Explore.tsx';
+import Shorts from '../Assets/Short.tsx';
 
 export default class Sidebar extends Component {
     render() {
