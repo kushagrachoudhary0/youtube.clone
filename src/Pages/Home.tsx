@@ -1,0 +1,134 @@
+import React, { Component } from 'react'
+import NavSlide from '../Comp/NavSlide.tsx'
+import Sidebar from '../Comp/Sidebar.tsx'
+
+export default class Home extends Component {
+  render() {
+    return (
+      <div className='flex '>
+        <Sidebar/>
+        <div>
+        <NavSlide/>
+        <div className='max-h-[100vh] overflow-y-auto '>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        <h1>hdaqidw</h1>
+        </div>
+        
+        </div>
+       
+      </div>
+    )
+  }
+}

@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import Sidebar from '../Comp/Sidebar.tsx'
 
-export default class Shorts extends Component {
+export default class Explore extends Component {
   render() {
     return (
       <div className='flex '>
       <Sidebar/>
       <div>
-      {/* <div className='max-h-[100vh] overflow-y-auto '>
+      <div className='max-h-[100vh] overflow-y-auto '>
       <h1>hdaqidw</h1>
       <h1>hdaqidw</h1>
       <h1>hdaqidw</h1>
@@ -122,10 +122,11 @@ export default class Shorts extends Component {
       <h1>hdaqidw</h1>
       <h1>hdaqidw</h1>
       <h1>hdaqidw</h1>
-      </div> */}
+      </div>
       
       </div>
      
     </div>
-  )}
+    )
+  }
 }
