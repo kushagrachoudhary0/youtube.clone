@@ -139,7 +139,7 @@ const Shorts = () => {
                     </div>
                     <div className="flex gap-3 items-center">
                       <BiMessageError className="w-[24px] h-[24px]"/>
-                      <h4>Send feedback</h4>
+                      <h4>Send feedbacks</h4> 
                     </div>
                   </div>
                 )}
