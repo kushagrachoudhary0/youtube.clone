@@ -4,16 +4,11 @@ import { MdOutlineExplore, MdSubscriptions, MdOutlineVideoLibrary, MdOutlineWatc
 import { SiYoutubeshorts } from "react-icons/si";
 import { GoHistory } from "react-icons/go";
 import { AiTwotonePlaySquare } from "react-icons/ai";
-import Chip from './Chip.tsx';
 import { Link } from 'react-router-dom';
 
 export default class Sidebar extends Component {
     render() {
-        const labels: string[] = [
-            "All", "Gaming", "FC Barcelona", "Apple", "Sports leagues", "User interface design",
-            "Gaming", "FC Barcelona", "Apple", "Sports leagues", "User interface design",
-            "Music", "Mixes", "Live", "EFootball", "Editing", "Game shows", "Shorts", "Live", "Code with Harry", "Course", "Project", "Live", "Code with Harry", "Course", "Project"
-        ];
+        
 
 
 
@@ -23,7 +18,7 @@ export default class Sidebar extends Component {
                     <ul className='p-3'>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
                             <IoHome className="w-6 h-6" />
-                            <Link  to="/Home">Home</Link> 
+                            <Link  to="/">Home</Link> 
                         </li>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
                             <MdOutlineExplore className="w-6 h-6" />
@@ -65,12 +60,10 @@ export default class Sidebar extends Component {
                         </li>
                     </ul>
                     <hr />
+                    
                 </div>
                     <hr className='flex flex-col ' />
-                <div className='flex p-3 h-fit gap-3 w-auto overflow-x-scroll scroll-container border-b-[1px] ' >
-                    {labels.map((label, index) => (
-                        <Chip key={index} label={label} />
-                    ))}
+                <div >
                 </div>
                 <hr />
             </div>
