@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css"
 import Head from './Header/Head.tsx';
-import '../src/Comp/Api.js'
+// import '../src/Comp/Api.js'
 import { BrowserRouter} from 'react-router-dom'
 import { Routes,Route} from 'react-router-dom'
 import Explore from './Pages/Explore.tsx';

@@ -5,6 +5,8 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { GoHistory } from "react-icons/go";
 import { AiTwotonePlaySquare } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import Explore from '../Assets/Explore.tsx';
+import Shorts from '../Assets/Short.tsx';
 
 export default class Sidebar extends Component {
     render() {
@@ -13,7 +15,7 @@ export default class Sidebar extends Component {
 
 
         return (
-            <div className=' flex  border-t-[1px] '>
+            <div className=' flex '>
                 <div className='w-[240px] border-r-[1px]'>
                     <ul className='p-3'>
                         <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
