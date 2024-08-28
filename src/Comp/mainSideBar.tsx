@@ -1,7 +1,4 @@
 import React from 'react'
-import { IoIosMenu, IoIosSearch } from 'react-icons/io';
-import { CiBellOn } from 'react-icons/ci';
-import { CgProfile } from 'react-icons/cg';
 import { IoHome } from 'react-icons/io5';
 import { MdOutlineExplore, MdOutlineVideoLibrary, MdOutlineWatchLater, MdPlaylistPlay, MdSubscriptions } from 'react-icons/md';
 import { SiYoutubeshorts } from 'react-icons/si';
@@ -52,7 +49,7 @@ const MainSideBar = () => {
               <MdPlaylistPlay className="w-6 h-6" />
               Pop
             </li>
-            <li className="flex justify-start h-[40px] px-3 items-center gap-5 font-normal">
+            <li className="flex justify-start h-[40px] px-3 items-center gap-5 font-normal ">
               Share more
             </li>
           </ul>
