@@ -14,7 +14,7 @@ export default function Head() {
     <>
       <div className="w-[100%] h-[56px] bg-white flex justify-between items-center">
         <div className="flex justify-between items-center mx-3 w-[138px]">
-          <IoIosMenu className="w-[30px] h-[30px]" />
+          <IoIosMenu className="w-[30px] h-[30px] hover:bg-gray-200 cursor-pointer" />
           <svg
             width="90"
             height="20"
@@ -73,7 +73,7 @@ export default function Head() {
             placeholder="Search"
             className="border-2 w-[500px] px-5 h-[40px]"
           />
-          <IoIosSearch className="w-[30px] p-1 h-[40px] bg-gray-200" />
+          <IoIosSearch className="w-[30px] p-1 h-[40px] bg-gray-200 hover:bg-gray-100 cursor-pointer " />
         </div>
         <div className="flex justify-between items-center gap-7 m-8">
           <svg
@@ -88,10 +88,10 @@ export default function Head() {
               fill="black"
             />
           </svg>
-          <CiBellOn className="w-[30px] h-[30px]" />
+          <CiBellOn className="w-[30px] h-[30px] hover:bg-gray-100 cursor-pointer" />
           <div className="relative">
             <CgProfile
-              className="w-[30px] h-[30px] cursor-pointer"
+              className="w-[30px] h-[30px] cursor-pointer "
               onClick={toggleDropdown}
             />
             {isDropdownOpen && (

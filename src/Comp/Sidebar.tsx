@@ -18,46 +18,46 @@ export default class Sidebar extends Component {
             <div className=' flex '>
                 <div className='w-[240px] border-r-[1px]'>
                     <ul className='p-3'>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <IoHome className="w-6 h-6" />
                             <Link  to="/">Home</Link> 
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <MdOutlineExplore className="w-6 h-6" />
                             <Link  to="/Explore">Explore</Link>
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <SiYoutubeshorts className="w-6 h-6" />
                             <Link  to="/Shorts">Shorts</Link>
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 hover:bg-gray-100 cursor-pointer"'>
                             <MdSubscriptions className="w-6 h-6" />
                             Subscription
                         </li>
                     </ul>
                     <hr />
                     <ul className='p-3'>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <MdOutlineVideoLibrary className="w-6 h-6" />
                             Library
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 hover:bg-gray-100 cursor-pointer"'>
                             <GoHistory className="w-6 h-6" />
                             History
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <AiTwotonePlaySquare className="w-6 h-6" />
                             Your Videos
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <MdOutlineWatchLater className="w-6 h-6" />
                             Watch later
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             <MdPlaylistPlay className="w-6 h-6" />
                             Pop
                         </li>
-                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal'>
+                        <li className='flex justify-start h-[40px] px-3 items-center gap-5 font-normal hover:bg-gray-100 cursor-pointer"'>
                             Share more
                         </li>
                     </ul>
