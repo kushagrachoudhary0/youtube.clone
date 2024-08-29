@@ -22,7 +22,7 @@ class Head extends Component<{}, State> {
     return (
       <div className="w-[100%] h-[56px] bg-white flex justify-between items-center">
         <div className="flex justify-between items-center mx-3 w-[138px]">
-          <IoIosMenu className="w-[30px] h-[30px]" />
+          <IoIosMenu className="w-[30px] h-[30px] hover:bg-gray-200 cursor-pointer" />
           <svg
             width="90"
             height="20"
@@ -81,7 +81,9 @@ class Head extends Component<{}, State> {
             placeholder="Search"
             className=" w-full "
           />
-          <IoIosSearch className=" ml-1 w-5 h-5" />
+
+          <IoIosSearch className="w-[30px] p-1 h-[40px] bg-gray-200 hover:bg-gray-100 cursor-pointer " />
+
         </div>
         <div className="flex justify-between items-center gap-7 m-8">
           <svg
@@ -96,11 +98,14 @@ class Head extends Component<{}, State> {
               fill="black"
             />
           </svg>
-          <CiBellOn className="w-[30px] h-[30px]" />
+          <CiBellOn className="w-[30px] h-[30px] hover:bg-gray-100 cursor-pointer" />
           <div className="relative">
             <CgProfile
+
               className="w-[30px] h-[30px] cursor-pointer"
               onClick={this.toggleDropdown}
+
+        
             />
             {isDropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
