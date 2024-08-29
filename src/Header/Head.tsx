@@ -1,17 +1,25 @@
-import React, { useState } from "react";
-import { IoIosMenu, IoIosSearch } from "react-icons/io";
-import { CiBellOn } from "react-icons/ci";
-import { CgProfile } from "react-icons/cg";
-
-export default function Head() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+import React, { Component } from 'react';
+import { IoIosMenu, IoIosSearch } from 'react-icons/io';
+import { CiBellOn } from 'react-icons/ci';
+import { CgProfile } from 'react-icons/cg';
+interface State {
+  isDropdownOpen: boolean;
+}
+class Head extends Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      isDropdownOpen: false
+    };
+  }
+  toggleDropdown = () => {
+    this.setState(prevState => ({
+      isDropdownOpen: !prevState.isDropdownOpen
+    }));
   };
-
-  return (
-    <>
+  render() {
+    const { isDropdownOpen } = this.state;
+    return (
       <div className="w-[100%] h-[56px] bg-white flex justify-between items-center">
         <div className="flex justify-between items-center mx-3 w-[138px]">
           <IoIosMenu className="w-[30px] h-[30px]" />
@@ -22,7 +30,7 @@ export default function Head() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_13_970)">
+            <g clipPath="url(#clip0_13_970)">
               <path
                 d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 1.78814e-07 14.285 0 14.285 0C14.285 0 5.35042 1.78814e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C1.78814e-07 5.35042 0 10 0 10C0 10 1.78814e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z"
                 fill="#FF0000"
@@ -67,13 +75,13 @@ export default function Head() {
             </defs>
           </svg>
         </div>
-        <div className="flex justify-center items-center border rounded-sm">
+        <div className="flex w-[600px] px-2 py-1 h-[80] justify-center items-center border border-gray-400 rounded-2xl ">
           <input
             type="text"
             placeholder="Search"
-            className="border-2 w-[500px] px-5 h-[40px]"
+            className=" w-full "
           />
-          <IoIosSearch className="w-[30px] p-1 h-[40px] bg-gray-200" />
+          <IoIosSearch className=" ml-1 w-5 h-5" />
         </div>
         <div className="flex justify-between items-center gap-7 m-8">
           <svg
@@ -92,7 +100,7 @@ export default function Head() {
           <div className="relative">
             <CgProfile
               className="w-[30px] h-[30px] cursor-pointer"
-              onClick={toggleDropdown}
+              onClick={this.toggleDropdown}
             />
             {isDropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
@@ -112,6 +120,7 @@ export default function Head() {
           </div>
         </div>
       </div>
-    </>
-  );
+    );
+  }
 }
+export default Head;

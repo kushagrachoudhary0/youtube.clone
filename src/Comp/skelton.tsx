@@ -4,7 +4,7 @@ export default class Skeleton extends Component {
   render() {
     return (
       
-        <ul className="flex gap-2 flex-wrap">
+        <ul className="flex gap-2 mt-2 flex-wrap">
           {[...Array(20)].map((_, index) => (
             <li key={index} className="w-[400px] h-auto border rounded-[20px] bg-gray-200 animate-pulse">
               <div className="w-[400px] h-[25vh] border rounded-t-xl bg-gray-300"></div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import YoutubeData from './ytdata.json';
 import Skelton from './skelton.tsx'
+import Modal from './Modal.tsx';
 
 interface Thumbnails {
     default: { url: string; width: number; height: number };
@@ -38,6 +39,7 @@ interface DataState {
     page: number; 
     isLoading: boolean;
     error?: string;
+    selectedVideo: Item | null;
 }
 
 class Data extends Component<{}, DataState> {
@@ -45,7 +47,8 @@ class Data extends Component<{}, DataState> {
         videos: [],
         hasMore: true,
         page: 1,
-        isLoading: false
+        isLoading: false,
+        selectedVideo: null 
     };    
 
     componentDidMount() {
@@ -60,7 +63,7 @@ class Data extends Component<{}, DataState> {
         this.setState({ isLoading: true });
     
         setTimeout(() => {
-            const itemsPerPage = 10; 
+            const itemsPerPage = 200; 
             const startIndex = (page - 1) * itemsPerPage;
             console.log(`Loading data from index ${startIndex}`);
     
@@ -110,11 +113,19 @@ class Data extends Component<{}, DataState> {
         });
     };
 
+    handleVideoClick = (video: Item) => {
+        this.setState({ selectedVideo: video });
+    };
+
+    closeModal = () => {
+        this.setState({ selectedVideo: null });
+    };
+
     render() {
-        const { videos, hasMore, isLoading, error } = this.state;
+        const { videos, hasMore, isLoading, error, selectedVideo } = this.state;
         
         return (
-            <div>
+            <div> 
                 {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
                 <InfiniteScroll
                     dataLength={videos.length} 
@@ -138,7 +149,11 @@ class Data extends Component<{}, DataState> {
                 >
                     <ul className='flex gap-2 flex-wrap'>
                         {videos.map((video) => (
-                            <li key={video.id.videoId} className='w-[400px] h-auto border rounded-[20px]'>
+                            <li
+                                key={video.id.videoId}
+                                className='w-[400px] h-auto border rounded-[20px] cursor-pointer'
+                                onClick={() => this.handleVideoClick(video)}
+                            >
                                 <img
                                     className='w-[400px] h-[25vh] border rounded-t-xl'
                                     src={video.snippet.thumbnails.medium.url}
@@ -150,18 +165,21 @@ class Data extends Component<{}, DataState> {
                                         src={video.snippet.thumbnails.default.url}
                                         alt={video.snippet.channelTitle}
                                     />
-                                    <div>
-                                        <h2 className='font-semibold'>{video.snippet.title}</h2>
+                                    <div className='w-[300px] '>
+                                        <h2 className="font-semibold truncate">{video.snippet.title}</h2>
                                         <div className='flex gap-16'>
                                             <p className='text-gray-400'>{video.snippet.channelTitle}</p>
-                                            <p className='text-gray-400'>{video.snippet.publishedAt}</p>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                         ))}
                     </ul>
+                   
                 </InfiniteScroll>
+                {selectedVideo && (
+                        <Modal video={selectedVideo} onClose={this.closeModal}  />
+                    )}
             </div>
         );
     }
